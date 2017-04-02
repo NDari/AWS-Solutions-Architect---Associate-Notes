@@ -90,3 +90,18 @@
     showing to see them and restore them.
 * Glacier requires a minimum of 90 days of storage before an item can be deleted
     or moved.
+* You can setup bucket policies which are for the whole bucket. This is in
+    addition to the ACLs.
+* Buckets can be configured to create access logs for all requests make to the
+    bucket and its itemso the ACLs.
+* Buckets can be configured to create access logs for all requests make to the
+    bucket and its items.
+* Server Side Encryption (SSE)at AWS has 3 forms: *S3 Managed Keys (SSE-S3)* where    each object as a unique key, and additionally the keys are encrypted with a
+    master key.
+    The master key is encrypted with *Advanced Encryption Standard 256 bit
+    (AES256). Another form is Key Management Service (KMS) which has some
+    additional benefits and costs compared to SSE-S3. One advantage is that it
+    has an audit trail on who used what key and when. You can manage KMS yourself.
+    Final form is Server Side Encryption with Customer provided key (SSE-C). You
+    manage the key, and Amazon manages the encryption.
+* Client Side Encryption is where you encrypt the data an upload it to S3.
